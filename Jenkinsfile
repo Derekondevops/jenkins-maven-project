@@ -16,11 +16,11 @@ pipeline {
             steps {
                 sh 'mvn -f hello-app/pom.xml test'
             }
-            post {
+           /* post {
                 always {
                     junit 'hello-app/target/surefire-reports/*.xml'
                 }
-            }
+            }*/
         }
     }
 }
